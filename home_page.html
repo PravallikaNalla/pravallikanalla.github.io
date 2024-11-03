@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artist Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(270deg, #ffb3ba, #ffdfba, #ffffba, #baffc9, #bae1ff);
+            background-size: 1000% 1000%;
+            animation: gradient 30s ease infinite;
+            color: white;
+            width: 100%;
+        }
+        .header h1 span {
+            display: inline-block;
+            animation: bounce 0.6s infinite, color-change 3s infinite;
+        }
+        .header h1 span:nth-child(2) { animation-delay: 0.1s; }
+        .header h1 span:nth-child(3) { animation-delay: 0.2s; }
+        .header h1 span:nth-child(4) { animation-delay: 0.3s; }
+        .header h1 span:nth-child(5) { animation-delay: 0.4s; }
+        .header h1 span:nth-child(6) { animation-delay: 0.5s; }
+        .header h1 span:nth-child(7) { animation-delay: 0.6s; }
+        .header h1 span:nth-child(8) { animation-delay: 0.7s; }
+        .header h1 span:nth-child(9) { animation-delay: 0.8s; }
+        .header h1 span:nth-child(10) { animation-delay: 0.9s; }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        @keyframes color-change {
+            0% { color: #ffb3ba; }
+            25% { color: #ffdfba; }
+            50% { color: #ffffba; }
+            75% { color: #baffc9; }
+            100% { color: #bae1ff; }
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery img {
+            margin: 10px;
+            max-width: 200px;
+            transition: transform .2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><span>A</span><span>r</span><span>t</span><span>i</span><span>s</span><span>t</span> <span>N</span><span>a</span><span>m</span><span>e</span></h1>
+        <p>Welcome to my art portfolio.</p>
+    </div>
+    <div class="gallery">
+        <img src="A1.jpg" alt="Artwork 1">
+        <img src="A2.jpg" alt="Artwork 2">
+        <img src="A3.jpg" alt="Artwork 3">
+        <!-- Add more images as needed -->
+    </div>
+    <div class="social-media">
+        <a href="https://www.facebook.com/artistname" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/artistname" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/artistname" target="_blank">YouTube</a>
+    </div>
+</body>
+</html>
